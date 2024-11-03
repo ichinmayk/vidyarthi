@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vidyarthi/static/css/main.fd358007.css",
+    "main.js": "/vidyarthi/static/js/main.c5f4e2f5.js",
+    "static/media/vidyarthi_logo.jpg": "/vidyarthi/static/media/vidyarthi_logo.ce63857f44ebc9f04dfb.jpg",
+    "index.html": "/vidyarthi/index.html",
+    "main.fd358007.css.map": "/vidyarthi/static/css/main.fd358007.css.map",
+    "main.c5f4e2f5.js.map": "/vidyarthi/static/js/main.c5f4e2f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd358007.css",
+    "static/js/main.c5f4e2f5.js"
+  ]
+}
