@@ -1,0 +1,11 @@
+{
+    "login": {
+      "title": "Login to Your Account",
+      "emailOrPhoneLabel": "Email or Mobile Phone",
+      "passwordLabel": "Password",
+      "loginButton": "Log In",
+      "signUpPrompt": "Don’t have an account?",
+      "signUpLink": "Sign up"
+    }
+  }
+  
