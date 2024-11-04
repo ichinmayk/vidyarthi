@@ -6,6 +6,16 @@
       "loginButton": "Log In",
       "signUpPrompt": "Don’t have an account?",
       "signUpLink": "Sign up"
-    }
+    },
+    "signup": {
+        "title": "Sign Up",
+        "firstNameLabel": "First Name",
+        "lastNameLabel": "Last Name",
+        "emailOrPhoneLabel": "Email or Mobile Number",
+        "passwordLabel": "Password",
+        "signUpButton": "Sign Up",
+        "loginPrompt": "Already have an account?",
+        "loginLink": "Log in"
+      }
   }
   
