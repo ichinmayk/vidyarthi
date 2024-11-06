@@ -22,7 +22,8 @@
         "totalStudents": "Total Students",
         "totalClasses": "Total Classes",
         "totalSubjects": "Total Subjects",
-        "attendance": "Attendance"
+        "attendance": "Attendance",
+        "classSchedule": "Class Schedule"
       }
   }
   
