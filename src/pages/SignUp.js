@@ -100,7 +100,7 @@ function SignUp() {
       </form>
 
       {/* Footer Text */}
-      <p className="text-sm text-center text-gray-500">
+      <p className="text-sm text-center text-white">
         {t('signup.loginPrompt')}{' '}
         <Link to="/login" className="text-indigo-500 hover:underline">
           {t('signup.loginLink')}

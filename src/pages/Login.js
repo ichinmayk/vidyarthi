@@ -2,12 +2,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiMail, FiLock } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 import FormWrapper from '../components/FormWrapper';
 import FormHeader from '../components/FormHeader';
 import InputField from '../components/InputField';
 
 function Login() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [emailOrPhone, setEmailOrPhone] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -29,7 +31,7 @@ function Login() {
       return;
     }
     setError('');
-    console.log('Form submitted successfully');
+    navigate('/dashboard');
   };
 
   return (
@@ -58,7 +60,7 @@ function Login() {
           {t('login.loginButton')}
         </button>
       </form>
-      <p className="text-sm text-center text-gray-500">
+      <p className="text-sm text-center text-white">
         {t('login.signUpPrompt')} <a href="/signup" className="text-indigo-500 hover:underline">{t('login.signUpLink')}</a>
       </p>
     </FormWrapper>

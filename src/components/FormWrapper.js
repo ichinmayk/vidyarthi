@@ -3,8 +3,8 @@ import brandLogo from '../assets/logos/vidyarthi_logo.jpg';
 
 function FormWrapper({ children }) {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0E4A56] via-[#165E6E] to-[#1D7A8C] backdrop-blur-lg px-4">
-      <div className="bg-white w-full max-w-5xl p-6 lg:p-8 rounded-3xl shadow-2xl grid md:grid-cols-[1fr_auto_1fr] gap-8 items-center">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 via-gray-600 to-gray-100 backdrop-blur-lg px-4">
+      <div className="w-full max-w-5xl p-6 lg:p-8 shadow-2xl grid md:grid-cols-[1fr_auto_1fr] gap-8 items-center">
         
         {/* Left Column: Logo Section on Desktop */}
         <div className="flex items-center justify-center">
