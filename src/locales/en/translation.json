@@ -16,6 +16,13 @@
         "signUpButton": "Sign Up",
         "loginPrompt": "Already have an account?",
         "loginLink": "Log in"
+      },
+      "instituteAdmin": {
+        "dashboardOverview": "Dashboard Overview",
+        "totalStudents": "Total Students",
+        "totalClasses": "Total Classes",
+        "totalSubjects": "Total Subjects",
+        "attendance": "Attendance"
       }
   }
   
