@@ -31,7 +31,7 @@ function Login() {
       return;
     }
     setError('');
-    navigate('/dashboard');
+    navigate('/fee-management');
   };
 
   return (
