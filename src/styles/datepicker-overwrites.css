@@ -1,0 +1,21 @@
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+.react-datepicker {
+  font-size: 0.875rem;
+}
+
+.react-datepicker__header {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.react-datepicker__day--selected {
+  background-color: #4f46e5 !important;
+  color: white !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: #4f46e5 !important;
+  color: white !important;
+}
