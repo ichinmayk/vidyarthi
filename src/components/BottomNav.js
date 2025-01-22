@@ -1,17 +1,26 @@
 // src/components/BottomNav.js
 import React, { useState } from "react";
-import { FiBarChart2, FiUser, FiClipboard, FiBook, FiCheckSquare, FiDollarSign } from "react-icons/fi"; // Added FiDollarSign
+import {
+  FiBarChart2,
+  FiUser,
+  FiClipboard,
+  FiBook,
+  FiCheckSquare,
+  FiDollarSign,
+} from "react-icons/fi"; // Added FiDollarSign
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 export default function BottomNav({ hiddenItems = [] }) {
   const [selectedTab, setSelectedTab] = useState("Dashboard");
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const items = [
-    { icon: FiBarChart2, label: "Dashboard" },
-    { icon: FiUser, label: "Students" },
-    { icon: FiClipboard, label: "Classes" },
-    { icon: FiBook, label: "Subjects" },
-    { icon: FiCheckSquare, label: "Attendance" },
-    { icon: FiDollarSign, label: "Fee Management" }, // Added Fee Management
+    { icon: FiBarChart2, label: "Dashboard", route: "/dashboard" }, // Added route
+    { icon: FiUser, label: "Students", route: "/students" },
+    { icon: FiClipboard, label: "Classes", route: "/classes" },
+    { icon: FiBook, label: "Subjects", route: "/subjects" },
+    { icon: FiCheckSquare, label: "Attendance", route: "/attendance" },
+    { icon: FiDollarSign, label: "Fee Management", route: "/fee-management" }, // Added Fee Management
   ];
 
   return (
@@ -23,20 +32,25 @@ export default function BottomNav({ hiddenItems = [] }) {
             key={item.label}
             icon={item.icon}
             label={item.label}
+            route={item.route}
             selectedTab={selectedTab}
             setSelectedTab={setSelectedTab}
+            navigate={navigate} // Pass navigate as a prop
           />
         ))}
     </div>
   );
 }
 
-function BottomNavItem({ icon: Icon, label, selectedTab, setSelectedTab }) {
+function BottomNavItem({ icon: Icon, label, route, selectedTab, setSelectedTab, navigate }) {
   const isSelected = selectedTab === label;
 
   return (
     <button
-      onClick={() => setSelectedTab(label)}
+      onClick={() => {
+        setSelectedTab(label); // Update the selected tab
+        navigate(route); // Navigate to the associated route
+      }}
       className={`flex flex-col items-center ${
         isSelected ? "text-indigo-600" : "text-gray-600"
       } transition-colors duration-200`}
